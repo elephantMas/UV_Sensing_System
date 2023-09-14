@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <SPI.h>
 #include <M5StickCPlus.h>
+#include <ArduinoJson.h>
 
 //サンプリング周期(秒)
 uint8_t sampling = 20;
@@ -8,20 +9,17 @@ uint8_t sampling = 20;
 int uv_num = 6;  //uv_sensor数
 int id = 1;
 
-//#include <M5Stack.h>
-#include <M5StickCPlus.h>
-#include <ArduinoJson.h>
+//サンプリング周期(秒)
+// uint8_t sampling = 30;
+// //int ver = 6;     //ウェアラブル1 設置型6
+// int uv_num = 6;  //uv_sensor数
+// int id = 2;
 
 //I2C Pahub unit
 #include <Wire.h>
 #include <SparkFun_I2C_Mux_Arduino_Library.h>  // http://librarymanager/All#SparkFun_I2C_Mux         https://github.com/sparkfun/SparkFun_I2C_Mux_Arduino_Library
 const int PaHub_I2C_ADDRESS = 0x71;
 QWIICMUX i2cMux;
-
-//env2 unit
-//#include <Adafruit_SHT31.h>  // http://librarymanager/All#Adafruit_SHT31           https://github.com/adafruit/Adafruit_SHT31
-//#define ENV2_CH 2
-//Adafruit_SHT31 sht3x = Adafruit_SHT31(&Wire);
 
 //GPS
 #include <SparkFun_u-blox_GNSS_Arduino_Library.h>  //http://librarymanager/All#SparkFun_u-blox_GNSS
@@ -37,12 +35,6 @@ GUVB sensor;
 //温湿度センサー shtc3
 #include "SparkFun_SHTC3.h"
 SHTC3 mySHTC3;
-
-//サンプリング周期(秒)
-// uint8_t sampling = 30;
-// //int ver = 6;     //ウェアラブル1 設置型6
-// int uv_num = 6;  //uv_sensor数
-// int id = 2;
 
 bool timeset = false;
 

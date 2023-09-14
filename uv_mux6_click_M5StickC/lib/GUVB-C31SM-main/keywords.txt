@@ -1,0 +1,39 @@
+#######################################
+# Syntax Coloring Map GUVB
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+GUVB	KEYWORD1	GUVB
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+enable	KEYWORD2
+shutdown	KEYWORD2
+setRange	KEYWORD2
+setIntegrationTime	KEYWORD2
+readUVB	KEYWORD2
+getUVIndex	KEYWORD2
+getUV	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+GUVB_INT_800MS	LITERAL1
+GUVB_INT_400MS	LITERAL1
+GUVB_INT_200MS	LITERAL1
+GUVB_INT_100MS	LITERAL1
+
+GUVB_RANGE_X1	LITERAL1
+GUVB_RANGE_X2	LITERAL1
+GUVB_RANGE_X4	LITERAL1
+GUVB_RANGE_X8	LITERAL1
+GUVB_RANGE_X16	LITERAL1
+GUVB_RANGE_X32	LITERAL1
+GUVB_RANGE_X64	LITERAL1
+GUVB_RANGE_X128	LITERAL1

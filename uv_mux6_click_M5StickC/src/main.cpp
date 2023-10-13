@@ -15,6 +15,7 @@ int id = 1;
 // int uv_num = 6;  //uv_sensor数
 // int id = 2;
 
+/* 各ユニットの定義 */
 //I2C Pahub unit
 #include <Wire.h>
 #include <SparkFun_I2C_Mux_Arduino_Library.h>  // http://librarymanager/All#SparkFun_I2C_Mux         https://github.com/sparkfun/SparkFun_I2C_Mux_Arduino_Library
@@ -37,8 +38,8 @@ GUVB sensor;
 SHTC3 mySHTC3;
 
 bool timeset = false;
-
 unsigned long timeout = 500;  //再送要求timeout時間
+
 //sdカードの定義
 File file;
 String fname;  //ファイル名
